@@ -1,0 +1,22 @@
+
+.about-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-heading {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: orangered; 
+}
+
+.about-paragraph {
+  margin-bottom: 1rem;
+  color: black; 
+}

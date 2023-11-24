@@ -1,0 +1,99 @@
+/* Home.css */
+
+/* Custom Top Container Styles */
+.custom-top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4.75rem 4.75rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Custom Heading Styles */
+.custom-heading {
+  font-weight: bold;
+  font-size: 5.5rem;
+  line-height: 1.2;
+}
+
+/* Custom Highlight Styles */
+.custom-highlight {
+  color: orangered;
+}
+
+/* Custom Description Styles */
+.custom-description {
+  color: #33373c;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* Custom Link Styles */
+.custom-link {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: orangered;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+/* Custom Swiper Slide Styles */
+.custom-swiper-slide {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Custom Listing Container Styles */
+.custom-listing-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Custom Listing Styles */
+.custom-listing {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Heading Secondary Styles */
+.custom-heading-secondary {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+/* Custom Subheading Styles */
+.custom-subheading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Custom Link Secondary Styles */
+.custom-link-secondary {
+  font-size: 0.875rem;
+  color: orangered;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.custom-link-secondary:hover {
+  text-decoration: underline;
+}
+
+/* Custom List Styles */
+.custom-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

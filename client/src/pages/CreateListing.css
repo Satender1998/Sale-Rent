@@ -1,0 +1,162 @@
+/* CreateListing.css */
+
+.create-listing-container {
+  padding: 1.5rem;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.create-listing-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.create-listing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-section {
+  /* display: flex; */
+  flex: 1;
+}
+
+.form-input {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 0.5rem;
+  margin: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.checkbox-item {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.checkbox-input {
+  width: 1rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-label {
+  font-weight: bold;
+}
+
+.image-description {
+  font-weight: normal;
+  color: #6b7280;
+  margin-left: 0.5rem;
+}
+
+.image-upload {
+  display: flex;
+  gap: 1rem;
+}
+
+.file-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.upload-button {
+  padding: 1rem;
+  border: 1px solid #48bb78;
+  border-radius: 0.5rem;
+  color: #48bb78;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.upload-button:hover {
+  box-shadow: 0 2px 4px rgba(72, 187, 120, 0.1);
+}
+
+.error-message {
+  color: #ef4444;
+  margin-top: 0.5rem;
+}
+
+.image-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.image-preview {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.delete-button {
+  padding: 1rem;
+  color: #ef4444;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.delete-button:hover {
+  opacity: 0.75;
+}
+
+.create-button {
+  padding: 1rem;
+  background-color: #4c51bf;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-top: 1rem;
+}
+
+.create-button:hover {
+  opacity: 0.95;
+}
+
+.error-message-small {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}

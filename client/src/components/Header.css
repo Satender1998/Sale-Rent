@@ -1,0 +1,111 @@
+
+
+.header-container {
+  background-color: #ECE3CE; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 6xl;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  text-decoration: none;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-title-part1 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-title-part2 {
+  color: orangered;
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+.header-search-form {
+  background-color: #edf2f7; 
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media (max-width: 600px){
+    max-width: 100%;
+  }
+}
+
+.header-search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.header-search-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  /* width: 10px; */
+}
+
+.header-search-icon {
+  color: orangered; 
+}
+
+.header-navigation {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.header-nav-item {
+  display: inline-block;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold; 
+  transition: color 0.3s ease;
+}
+
+.header-nav-link:hover {
+  color: #2d3748; 
+}
+
+.header-profile-image {
+  border-radius: 50%;
+  height: 1.75rem;
+  width: 1.75rem;
+  object-fit: cover;
+}
+
+.header-signin {
+  color: #4a5568; 
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-signin:hover {
+  color: #2d3748; 
+}

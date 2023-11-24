@@ -1,0 +1,147 @@
+/* Search Container */
+.search-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Search Form Container */
+.search-form-container {
+  padding: 1.75rem;
+  border-bottom: 2px solid #000;
+  /* min-height: 100vh; */
+}
+
+/* Search Form */
+.search-form {
+  display: flex-col;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Search Input Group */
+.search-input-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+/* Search Label */
+.search-label {
+  font-weight: 600;
+  white-space: nowrap;
+  width: 100px;
+  margin-left: 10px;
+}
+
+/* Search Input */
+.search-input {
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  /* width: 100%; */
+}
+
+/* Search Checkbox Group */
+.search-checkbox-group {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+/* Search Checkbox */
+.search-checkbox {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Checkbox */
+.checkbox {
+  width: 1rem;
+}
+
+/* Search Select */
+.search-select {
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+/* Search Button */
+.search-button {
+  background-color: #33404e;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #07a707;
+}
+
+/* Search Results */
+.search-results {
+  flex: 1;
+  /* display: flex; */
+}
+
+/* Search Results Heading */
+.search-results-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #33404e;
+  padding: 1rem;
+  color: #33404e;
+  margin-top: 1.25rem;
+}
+
+/* Search No Results */
+.search-no-results {
+  font-size: 1.25rem;
+  color: #07a707;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Search Loading */
+.search-loading {
+  font-size: 1.25rem;
+  color: #07a707;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Search Results List */
+.search-results-list {
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Show More Button */
+.search-show-more {
+  background-color: #07a707;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.search-show-more:hover {
+  background-color: #33404e;
+}

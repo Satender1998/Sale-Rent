@@ -1,0 +1,15 @@
+/* OAuth.css */
+
+button.oauth-button { 
+  color: black;
+  background-color: aquamarine;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.oauth-button:hover {
+  opacity: 0.5;
+}

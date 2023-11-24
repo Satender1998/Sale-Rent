@@ -1,0 +1,36 @@
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-username {
+  font-weight: 600;
+}
+
+.contact-listing-name {
+  font-weight: 600;
+}
+
+.contact-textarea {
+  width: 100%;
+  border: 1px solid #000; /* Add your border styles here */
+  padding: 0.75rem; /* Adjust based on your design */
+  border-radius: 0.5rem; /* Adjust based on your design */
+}
+
+.contact-link {
+  display: inline-block;
+  background-color: #374151; /* Replace with your desired color */
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem; /* Adjust based on your design */
+  border-radius: 0.5rem; /* Adjust based on your design */
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  opacity: 0.95;
+}
