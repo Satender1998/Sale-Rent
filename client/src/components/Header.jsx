@@ -12,15 +12,22 @@ export default function Header() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Update the URL search parameters with the current searchTerm
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set("searchTerm", searchTerm);
     const searchQuery = urlParams.toString();
+
+    // Navigate to the "/search" route with the updated search parameters
     navigate(`/search?${searchQuery}`);
   };
 
   useEffect(() => {
+    // Extract and check the "searchTerm" from the URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const searchTermFromUrl = urlParams.get("searchTerm");
+
+    // If a searchTerm is found in the URL, update the component state
     if (searchTermFromUrl) {
       setSearchTerm(searchTermFromUrl);
     }
@@ -35,6 +42,7 @@ export default function Header() {
             <span className="header-title-part2">Rent</span>
           </h1>
         </Link>
+        {/* Form for submitting search queries */}
         <form onSubmit={handleSubmit} className="header-search-form">
           <input
             type="text"
@@ -43,10 +51,12 @@ export default function Header() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
+          {/* Button to submit the search form */}
           <button className="header-search-button">
             <FaSearch className="header-search-icon" />
           </button>
         </form>
+        {/* Navigation links for Home, About, and User Profile */}
         <ul className="header-navigation">
           <li className="header-nav-item">
             <Link to="/" className="header-nav-link">
@@ -60,6 +70,7 @@ export default function Header() {
           </li>
           <li className="header-nav-item">
             <Link to="/profile" className="header-nav-link">
+              {/* Display user profile image if logged in, otherwise show "Sign in" */}
               {currentUser ? (
                 <img
                   className="header-profile-image"
