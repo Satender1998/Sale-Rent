@@ -1,15 +1,16 @@
-
-
+.main-container1 {
+  max-width: 100rem;
+}
 
 .custom-top-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.75rem 0.75rem;
-  max-width: 75rem;
+  max-width: 100rem;
   margin: 0;
+  margin-left: 50px;
 }
-
 
 .custom-heading {
   font-weight: bold;
@@ -17,18 +18,15 @@
   line-height: 1.2;
 }
 
-
 .custom-highlight {
   color: orangered;
 }
-
 
 .custom-description {
   color: #33373c;
   font-size: 1.2rem;
   line-height: 1.4;
 }
-
 
 .custom-link {
   font-size: 0.875rem;
@@ -43,19 +41,22 @@
   text-decoration: underline;
 }
 
-
 .custom-swiper-slide {
+  max-width: 100rem;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .custom-swiper-slide {
+    height: 300px; /* Adjust the height for smaller screens */
+  }
+}
 
 .custom-listing-container {
-  /* border-color: aqua; */
   max-width: 75rem;
-  /* margin: 0 auto; */
   padding: 0.75rem;
   display: flex;
   flex-direction: column;
@@ -63,13 +64,12 @@
   gap: 2rem;
 }
 
-
 .custom-listing {
+  margin-left: 50px;
   /* display: flex; */
   /* flex-direction: column; */
   /* width: calc(33.33% ); */
 }
-
 
 .custom-heading-secondary {
   font-size: 1.125rem;
@@ -77,12 +77,10 @@
   margin-bottom: 0.75rem;
 }
 
-
 .custom-subheading {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 
 .custom-link-secondary {
   font-size: 0.875rem;
@@ -95,12 +93,26 @@
   text-decoration: underline;
 }
 
+/* .custom-list {
+  display: flex;
+  flex-direction: col; 
+  gap: 3rem;
+  max-width: 80rem;
+} */
+
 
 .custom-list {
   display: flex;
   flex-direction: row;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
   gap: 3rem;
+  overflow: hidden;
+  max-width: 100rem; /* Hide any additional items */
 
+}
+
+
+@media screen and (max-width: 768px) {
+  .custom-listing {
+    max-width: 80rem; /* For smaller screens, each item takes full width */
+  }
 }
