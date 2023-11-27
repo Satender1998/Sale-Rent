@@ -49,7 +49,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="main-container1">
       {/* top */}
       <div className="custom-top-container">
         <h1 className="custom-heading">
@@ -69,7 +69,7 @@ export default function Home() {
       </div>
 
       {/* swiper */}
-      <Swiper navigation>
+      <Swiper navigation style={{ height: "500px" }}>
         {offerListings &&
           offerListings.length > 0 &&
           offerListings.map((listing) => (
