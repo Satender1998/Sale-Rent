@@ -1,5 +1,6 @@
 .main-container1 {
   max-width: 100rem;
+  padding: 0 20px;
 }
 
 .custom-top-container {
@@ -7,14 +8,15 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.75rem 0.75rem;
-  max-width: 100rem;
+  max-width: 100%;
   margin: 0;
+  padding: 20px 0; 
   margin-left: 50px;
 }
 
 .custom-heading {
   font-weight: bold;
-  font-size: 5.5rem;
+  font-size: 3rem;
   line-height: 1.2;
 }
 
@@ -34,7 +36,7 @@
   color: orangered;
   text-decoration: none;
   transition: text-decoration 0.2s ease-in-out;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .custom-link:hover {
@@ -42,8 +44,8 @@
 }
 
 .custom-swiper-slide {
-  max-width: 100rem;
-  height: 500px;
+  max-width: 100%;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,8 +58,8 @@
 }
 
 .custom-listing-container {
-  max-width: 75rem;
-  padding: 0.75rem;
+  max-width: 100%;
+  padding: 20px 0; 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -65,7 +67,7 @@
 }
 
 .custom-listing {
-  margin-left: 50px;
+  margin-left: 0;
   /* display: flex; */
   /* flex-direction: column; */
   /* width: calc(33.33% ); */
@@ -104,15 +106,28 @@
 .custom-list {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 20px;
   overflow: hidden;
   max-width: 100rem; /* Hide any additional items */
 
 }
 
 
-@media screen and (max-width: 768px) {
-  .custom-listing {
-    max-width: 80rem; /* For smaller screens, each item takes full width */
+@media screen and (min-width: 768px) {
+  .custom-heading {
+    font-size: 5.5rem; /* Restore font size for larger screens */
+  }
+
+  .custom-link {
+    margin-bottom: 20px; /* Restore margin for larger screens */
+  }
+
+  .custom-swiper-slide {
+    height: 500px; /* Restore height for larger screens */
+  }
+
+  .custom-list {
+    flex-direction: row; /* Align items in a row for larger screens */
+    max-width: 100%; /* Adjust max-width for larger screens */
   }
 }
