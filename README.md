@@ -4,36 +4,43 @@ Sale&Rent is a MERN stack web application designed to facilitate property listin
 
 ## Deployed Link
 
-[Visit Sale&Rent](https://google.com)
+[Visit Sale&Rent](https://saleandrent.onrender.com)
 
-# Table of Contents
+## Table of Contents
 
 1. [Sale&Rent - Property Listing Platform](#salrent---property-listing-platform)
    1.1. [Deployed Link](#deployed-link)
-2. [Technologies Used](#technologies-used)
-   2.1. [Frontend](#frontend)
-   2.2. [Backend](#backend)
-   2.3. [User Authentication](#user-authentication)
-   2.4. [Deployment Technology](#deployment-technology)
-3. [Setting Up the Application](#setting-up-the-application)
-   3.1. [Prerequisites](#prerequisites)
-   3.2. [Steps to Run Locally](#steps-to-run-locally)
-      - 3.2.1. [Fork the Repository](#1-fork-the-repository)
-      - 3.2.2. [Clone the Repository](#2-clone-the-repository)
-      - 3.2.3. [Move to Frontend Folder](#3-move-to-frontend-folder)
-      - 3.2.4. [Install Dependencies for Frontend](#4-install-dependencies-for-frontend)
-      - 3.2.5. [Run the Frontend Project](#5-run-the-frontend-project)
-      - 3.2.6. [Move to Backend Folder](#6-move-to-backend-folder)
-      - 3.2.7. [Install Dependencies for Backend](#7-install-dependencies-for-backend)
-      - 3.2.8. [Run the Backend Project](#8-run-the-backend-project)
-   3.3. [Setting up MongoDB Atlas](#setting-up-mongodb-atlas)
-      - 3.3.1. [Create an Account](#1-create-an-account)
-      - 3.3.2. [Create a New Cluster](#2-create-a-new-cluster)
-      - 3.3.3. [Whitelist IP Address](#3-whitelist-ip-address)
-      - 3.3.4. [Create a Database User](#4-create-a-database-user)
-      - 3.3.5. [Connect to Your Cluster](#5-connect-to-your-cluster)
-4. [Summary](#summary)
-   4.1. [Features](#features)
+2. [Summary](#summary)
+   2.1. [Features](#features)
+3. [Technologies Used](#technologies-used)
+   3.1. [Frontend](#frontend)
+   3.2. [Backend](#backend)
+   3.3. [User Authentication](#user-authentication)
+   3.4. [Deployment Technology](#deployment-technology)
+4. [Setting Up the Application](#setting-up-the-application)
+   4.1. [Prerequisites](#prerequisites)
+   4.2. [Steps to Run Locally](#steps-to-run-locally)
+      - 4.2.1. [Fork the Repository](#1-fork-the-repository)
+      - 4.2.2. [Clone the Repository](#2-clone-the-repository)
+      - 4.2.3. [Move to Frontend Folder](#3-move-to-frontend-folder)
+      - 4.2.4. [Install Dependencies for Frontend](#4-install-dependencies-for-frontend)
+      - 4.2.5. [Run the Frontend Project](#5-run-the-frontend-project)
+      - 4.2.6. [Move to Backend Folder](#6-move-to-backend-folder)
+      - 4.2.7. [Install Dependencies for Backend](#7-install-dependencies-for-backend)
+      - 4.2.8. [Run the Backend Project](#8-run-the-backend-project)
+   4.3. [Setting up MongoDB Atlas](#setting-up-mongodb-atlas)
+      - 4.3.1. [Create an Account](#1-create-an-account)
+      - 4.3.2. [Create a New Cluster](#2-create-a-new-cluster)
+      - 4.3.3. [Whitelist IP Address](#3-whitelist-ip-address)
+      - 4.3.4. [Create a Database User](#4-create-a-database-user)
+      - 4.3.5. [Connect to Your Cluster](#5-connect-to-your-cluster)
+5. [Firebase Authentication and Storage Integration](#firebase-authentication-and-storage-integration)
+   5.1. [Authentication](#authentication)
+      - 5.1.1. [Google Sign Up](#google-sign-up)
+   5.2. [Storage](#storage)
+      - 5.2.1. [Profile Picture Upload](#profile-picture-upload)
+6. [Summary](#summary)
+   6.1. [Features](#features)
 
 
 ## Technologies Used
@@ -52,7 +59,7 @@ Sale&Rent is a MERN stack web application designed to facilitate property listin
 - **Firebase**
 
 ### Deployment Technology
-- **Frontend**: [Vercel](https://vercel.com)
+- **Frontend**: [Render](https://render.com)
 - **Backend**: [Render](https://render.com)
 
 ## Setting Up the Application
@@ -171,7 +178,65 @@ MongoDB Atlas is a cloud-based database service that allows you to easily set up
 mongodb+srv://<username>:<password>@clustername.mongodb.net/test?retryWrites=true&w=majority
 
 ```
-Create documents with name 'users' and 'games'
+
+
+
+## Table of Contents
+
+- [Firebase Authentication and Storage Integration](#firebase-authentication-and-storage-integration)
+  - [Authentication](#authentication)
+    - [Google Sign Up](#google-sign-up)
+  - [Storage](#storage)
+    - [Profile Picture Upload](#profile-picture-upload)
+
+## Firebase Authentication and Storage Integration
+
+This project utilizes Firebase Authentication for user authentication and Firebase Storage for storing user profile pictures.
+
+### Authentication
+
+Firebase Authentication provides easy-to-use APIs to authenticate users in your app.
+
+#### Google Sign Up
+
+To enable Google Sign Up for your project:
+
+1. **Create a Firebase Project:**
+   - Go to the [Firebase Console](https://console.firebase.google.com/).
+   - Click on "Add Project" and follow the setup instructions.
+
+2. **Enable Google Sign-In:**
+   - In your Firebase project, go to the Authentication section.
+   - Enable Google as a sign-in provider.
+
+3. **Implement Google Sign-In in your App:**
+   - Follow the official Firebase Authentication documentation to integrate Google Sign-In into your app.
+
+4. **Handle User Authentication in your Code:**
+   - Use Firebase Authentication SDK to manage user authentication in your app.
+
+### Storage
+
+Firebase Storage allows you to store and serve user-generated content, such as images or videos.
+
+#### Profile Picture Upload
+
+To enable profile picture upload during user signup:
+
+1. **Set Up Firebase Storage:**
+   - In the Firebase Console, navigate to the Storage section.
+   - Set up rules and permissions for your storage bucket.
+
+2. **Implement Profile Picture Upload in your App:**
+   - When a user signs up or updates their profile picture, use Firebase Storage SDK to upload the image to the storage bucket.
+
+3. **Link Profile Pictures to User Accounts:**
+   - Store the links to the uploaded profile pictures in your Firebase Realtime Database or Firestore, associating them with the corresponding user accounts.
+
+4. **Display Profile Pictures in your App:**
+   - Retrieve the profile picture URLs from the database and use them to display user profile pictures in your app.
+
+
 
 
 # Sale&Rent - Property Listing Platform
