@@ -1,4 +1,3 @@
-ListingItem.css
 
 .listing-item {
   background-color: #fff;
@@ -7,8 +6,8 @@ ListingItem.css
   overflow: hidden;
   border-radius: 0.5rem;
   width: 100%;
-  max-width: 330px; /* Adjust based on your design */
-  margin-bottom: 1.25rem; /* Adjust based on your design */
+  max-width: 330px; 
+  margin-bottom: 1.25rem; 
 }
 
 .listing-item:hover {

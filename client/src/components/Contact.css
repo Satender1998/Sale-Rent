@@ -1,4 +1,4 @@
-/* Contact.css */
+
 
 .contact-container {
   display: flex;
@@ -16,18 +16,18 @@
 
 .contact-textarea {
   width: 100%;
-  border: 1px solid #000; /* Add your border styles here */
-  padding: 0.75rem; /* Adjust based on your design */
-  border-radius: 0.5rem; /* Adjust based on your design */
+  border: 1px solid #000; 
+  padding: 0.75rem;
+  border-radius: 0.5rem; 
 }
 
 .contact-link {
   display: inline-block;
-  background-color: #374151; /* Replace with your desired color */
+  background-color: #374151; 
   color: #fff;
   text-align: center;
-  padding: 0.75rem; /* Adjust based on your design */
-  border-radius: 0.5rem; /* Adjust based on your design */
+  padding: 0.75rem;
+  border-radius: 0.5rem; 
   text-decoration: none;
 }
 

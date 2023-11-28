@@ -1,4 +1,4 @@
-/* Profile.css */
+
 
 /* Profile Container */
 .profile-container {
@@ -117,7 +117,12 @@
 
 /* Show Listings Button */
 .show-listings {
+  background-color: #008000;
   color: black;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  text-align: center;
+  text-transform: uppercase;
   font-weight: bold;
   width: 100%;
   cursor: pointer;
@@ -174,12 +179,19 @@
 
 /* Delete Listing Button */
 .delete-listing {
-  color: #ff0000;
+  background-color: orange;
+  color: black;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
   cursor: pointer;
 }
 
 /* Edit Listing Button */
 .edit-listing {
-  color: #008000;
+  background-color: green;
+  color: black;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+  margin-top: 10px;
   cursor: pointer;
 }

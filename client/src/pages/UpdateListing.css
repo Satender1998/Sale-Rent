@@ -1,4 +1,18 @@
-/* UpdateListing Form Container */
+.main-container{
+  padding: 0.75rem;
+  max-width: 54rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Heading-text{
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .update-listing-form-container {
   display: flex;
   flex-direction: column;
@@ -6,93 +20,94 @@
   flex: 1;
 }
 
-/* UpdateListing Input */
+
 .update-listing-input {
   border: 1px solid #000000;
   padding: 1rem;
   border-radius: 0.375rem;
 }
 
-/* UpdateListing Textarea */
+
 .update-listing-textarea {
   border: 1px solid #000000;
   padding: 1rem;
   border-radius: 0.375rem;
 }
 
-/* UpdateListing Checkbox Group */
+
 .update-listing-checkbox-group {
   display: flex;
   gap: 0.625rem;
 }
 
-/* UpdateListing Checkbox */
+
 .update-listing-checkbox {
   width: 1.25rem;
 }
 
-/* UpdateListing Checkbox Label */
+
 .update-listing-checkbox-label {
   margin-left: 0.3125rem;
 }
 
-/* UpdateListing Number Input */
+
 .update-listing-number-input {
   border: 1px solid #000000;
   padding: 1rem;
   border-radius: 0.375rem;
 }
 
-/* UpdateListing Number Label */
+
 .update-listing-number-label {
   font-size: 1rem;
 }
 
-/* UpdateListing Regular Price Input */
+
 .update-listing-regular-price-input {
   border: 1px solid #000000;
   padding: 1rem;
   border-radius: 0.375rem;
 }
 
-/* UpdateListing Regular Price Label */
+
 .update-listing-regular-price-label {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* UpdateListing Discount Price Input */
+
 .update-listing-discount-price-input {
   border: 1px solid #000000;
   padding: 1rem;
   border-radius: 0.375rem;
 }
 
-/* UpdateListing Discount Price Label */
+
 .update-listing-discount-price-label {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Styling for the form section with input fields */
+
 .update-listing-form-container {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
   margin-top: 3rem;
 }
 
 .update-listing-form-section {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .update-listing-form-section-header {
   font-weight: 600;
   font-size: 1.5rem;
+  margin-bottom: 2px;
 }
 
 .update-listing-form-section-subheader {
@@ -128,7 +143,7 @@
   margin-top: 0.5rem;
 }
 
-/* Styling for the section displaying uploaded images */
+
 .update-listing-form-image-container {
   display: flex;
   justify-content: space-between;
@@ -164,4 +179,39 @@
 
 .update-listing-form-submit-button:disabled {
   background-color: #ccc;
+} 
+
+/* ///////////////////////////////////////////////////////////// */
+
+.update-listing-beds-baths{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
+
+.update-listing-beds{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.update-listing-baths{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.update-listing-regular-price{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.update-listing-discount-price{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/* .update-listing-input-container{
+  gap: 0.5rem;
+} */

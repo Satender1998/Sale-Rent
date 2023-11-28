@@ -1,4 +1,4 @@
-/* SignIn.css */
+
 
 /* SignIn Container */
 .signin-container {
@@ -55,6 +55,10 @@
 .signin-link span {
   color: #3182ce;
   cursor: pointer;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 15px;
+  
 }
 
 /* SignIn Error */

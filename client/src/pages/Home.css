@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 768px) {
   .custom-swiper-slide {
-    height: 500px; /* Adjust the height for smaller screens */
+    height: 500px;
   }
 }
 
@@ -108,26 +108,26 @@
   flex-direction: row;
   gap: 20px;
   overflow: hidden;
-  max-width: 100rem; /* Hide any additional items */
+  max-width: 100rem; 
 
 }
 
 
 @media screen and (min-width: 768px) {
   .custom-heading {
-    font-size: 5.5rem; /* Restore font size for larger screens */
+    font-size: 5.5rem;
   }
 
   .custom-link {
-    margin-bottom: 20px; /* Restore margin for larger screens */
+    margin-bottom: 20px; 
   }
 
   .custom-swiper-slide {
-    height: 500px; /* Restore height for larger screens */
+    height: 500px;
   }
 
   .custom-list {
-    flex-direction: row; /* Align items in a row for larger screens */
-    max-width: 100%; /* Adjust max-width for larger screens */
+    flex-direction: row; 
+    max-width: 100%;
   }
 }

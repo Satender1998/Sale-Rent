@@ -1,10 +1,11 @@
-/* Main Container Styles */
+
+
 .main-container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Loading Text Styles */
+
 .loading-text {
   color: #333;
   font-size: 2rem;
@@ -12,7 +13,7 @@
   margin-top: 2rem;
 }
 
-/* Error Text Styles */
+
 .error-text {
   color: #ff0000;
   font-size: 2rem;
@@ -20,12 +21,12 @@
   margin-top: 2rem;
 }
 
-/* Image Container Styles */
+
 .image-container {
   height: 50vh;
 }
 
-/* Share Button Container Styles */
+
 .share-button-container {
   position: fixed;
   top: 13%;
@@ -42,12 +43,12 @@
   cursor: pointer;
 }
 
-/* Share Icon Styles */
+
 .share-icon {
   color: #333;
 }
 
-/* Copied Message Styles */
+
 .copied-message {
   position: fixed;
   top: 23%;
@@ -58,19 +59,19 @@
   padding: 8px;
 }
 
-/* Listing Details Styles */
+
 .listing-details {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Title Styles */
+
 .title {
   font-size: 2rem;
   font-weight: bold;
 }
 
-/* Location Styles */
+
 .location {
   display: flex;
   align-items: center;
@@ -80,12 +81,12 @@
   margin-top: 6px;
 }
 
-/* Marker Icon Styles */
+
 .marker-icon {
   color: #008000;
 }
 
-/* Type and Offer Styles */
+
 .type-and-offer {
   display: flex;
   gap: 10px;
@@ -94,7 +95,7 @@
   
 }
 
-/* Listing Type Styles */
+
 .listing-type {
   background-color: #ff0000;
   color: #fff;
@@ -103,7 +104,7 @@
   font-size: 0.8rem;
 }
 
-/* Discount Styles */
+
 .discount {
   background-color: #008000;
   color: #fff;
@@ -112,18 +113,18 @@
   font-size: 0.8rem;
 }
 
-/* Description Styles */
+
 .description {
   color: black;
   margin-top: 10px;
 }
 
-/* Description Title Styles */
+
 .description-title {
   font-weight: bold;
 }
 
-/* Features Styles */
+
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -133,7 +134,7 @@
   margin-top: 10px;
 }
 
-/* Feature Item Styles */
+
 .feature-item {
   display: flex;
   align-items: center;
@@ -144,13 +145,13 @@
   white-space: nowrap;
 }
 
-/* Icon Styles */
+
 .icon {
   font-size: 1.2rem;
   color: #008000;
 }
 
-/* Contact Button Styles */
+
 .contact-button {
   background-color: #008000;
   color: #fff;

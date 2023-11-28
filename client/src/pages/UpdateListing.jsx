@@ -172,8 +172,8 @@ export default function CreateListing() {
     }
   };
   return (
-    <main className="p-3 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-semibold text-center my-7">
+    <main className="main-container">
+      <h1 className="Heading-text">
         Update a Listing
       </h1>
       <form onSubmit={handleSubmit} className="update-listing-form-container">
@@ -190,7 +190,7 @@ export default function CreateListing() {
             value={formData.name}
           />
         </div>
-        <div className="update-listing-textarea-container">
+        <div className="update-listing-input-container">
           <textarea
             type="text"
             placeholder="Description"
@@ -266,7 +266,72 @@ export default function CreateListing() {
             <label className="update-listing-checkbox-label">Offer</label>
           </div>
         </div>
-        <div className="flex flex-wrap gap-6">
+
+
+
+        <div className="update-listing-beds-baths">
+          <div className="update-listing-beds">
+            <input
+              type="number"
+              id="bedrooms"
+              min="1"
+              max="10"
+              required
+              className="update-listing-number-input"
+              onChange={handleChange}
+              value={formData.bedrooms}
+            />
+            <p className="update-listing-number-label">Beds</p>
+          </div>
+          <div className="update-listing-baths">
+            <input
+              type="number"
+              id="bathrooms"
+              min="1"
+              max="10"
+              required
+              className="update-listing-number-input"
+              onChange={handleChange}
+              value={formData.bathrooms}
+            />
+            <p className="update-listing-number-label">Baths</p>
+          </div>
+          <div className="update-listing-regular-price">
+            <input
+              type="number"
+              id="regularPrice"
+              min="800"
+              max="10000"
+              required
+              className="update-listing-regular-price-input"
+              onChange={handleChange}
+              value={formData.regularPrice}
+            />
+            <div className="update-listing-regular-price-label">
+              <p>Regular price</p>
+              <span className="text-xs">($ / month)</span>
+            </div>
+          </div>
+          {formData.offer && (
+            <div className="update-listing-discount-price">
+              <input
+                type="number"
+                id="discountPrice"
+                min="0"
+                max="1000"
+                required
+                className="update-listing-discount-price-input"
+                onChange={handleChange}
+                value={formData.discountPrice}
+              />
+              <div className="update-listing-discount-price-label">
+                <p>Discounted price</p>
+                <span className="text-xs">($ / month)</span>
+              </div>
+            </div>
+          )}
+        </div>
+        {/* <div className="flex flex-wrap gap-6">
           <div className="flex items-center gap-2">
             <input
               type="number"
@@ -327,11 +392,14 @@ export default function CreateListing() {
               </div>
             </div>
           )}
-        </div>
-        {/* ... (continue with the rest of the form) */}
+        </div> */}
+
+
+
+        
 
         <div className="update-listing-form-container">
-          {/* ... (previous form elements) */}
+      
           <div className="update-listing-form-section">
             <p className="update-listing-form-section-header">
               Images:
@@ -389,4 +457,5 @@ export default function CreateListing() {
       </form>
     </main>
   );
+
 }
