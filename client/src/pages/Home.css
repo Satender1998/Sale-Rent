@@ -1,5 +1,5 @@
 .main-container1 {
-  max-width: 100rem;
+  max-width: 100%;
   padding: 0 20px;
 }
 
@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0.75rem 0.75rem;
   max-width: 100%;
   margin: 0;
   padding: 20px 0; 
@@ -30,14 +29,14 @@
   line-height: 1.4;
 }
 
-.custom-link {
+/* .custom-link {
   font-size: 0.875rem;
   font-weight: bold;
   color: orangered;
   text-decoration: none;
   transition: text-decoration 0.2s ease-in-out;
   margin-bottom: 10px;
-}
+} */
 
 .custom-link:hover {
   text-decoration: underline;
@@ -103,14 +102,34 @@
 } */
 
 
-.custom-list {
+/* .custom-list {
   display: flex;
   flex-direction: row;
   gap: 20px;
   overflow: hidden;
   max-width: 100rem; 
 
+} */
+
+.custom-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }
+
+@media screen and (max-width: 900px){
+  .custom-list {
+    /* border: solid 2px black; */
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px){
+  .custom-list {
+    /* border: solid 2px black; */
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -118,9 +137,7 @@
     font-size: 5.5rem;
   }
 
-  .custom-link {
-    margin-bottom: 20px; 
-  }
+  
 
   .custom-swiper-slide {
     height: 500px;
