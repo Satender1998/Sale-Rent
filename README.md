@@ -3,6 +3,7 @@
 Sale&Rent is a MERN stack web application designed to facilitate property listing for both sale and rent. Users can explore property details, contact sellers, and manage their property listings.
 
 ## Deployed Link
+## Website will take sometime to load
 
 [Visit Sale&Rent](https://saleandrent.onrender.com)
 

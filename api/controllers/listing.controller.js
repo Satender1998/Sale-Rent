@@ -87,7 +87,7 @@ export const getListing = async (req, res, next) => {
 }
 
 
-export const getListings = async (req, res, nexr) => {
+export const getListings = async (req, res, next) => {
   try {
     // Parsing query parameters for pagination, filtering, and sorting
     const limit = parseInt(req.query.limit) || 9;
