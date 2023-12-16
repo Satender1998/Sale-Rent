@@ -3,6 +3,7 @@
 button.oauth-button { 
   color: black;
   background-color: aquamarine;
+  font-weight: bold;
   padding: 0.75rem;
   border-radius: 0.5rem;
   text-transform: uppercase;

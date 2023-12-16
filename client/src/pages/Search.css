@@ -99,7 +99,7 @@
   font-weight: 600;
   border-bottom: 2px solid #33404e;
   padding: 1rem;
-  color: #33404e;
+  color: black;
   margin-top: 1.25rem;
 }
 
@@ -145,4 +145,49 @@
 
 .search-show-more:hover {
   background-color: #33404e;
+}
+
+
+
+@media (max-width: 768px) {
+  .search-form-container {
+    padding: 1rem;
+  }
+
+  .search-input-group {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .search-label {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .search-input {
+    width: 100%; /* Allow the input to take full width */
+  }
+
+  .search-checkbox-group {
+    flex-direction: column;
+  }
+
+  .search-select {
+    width: 100%;
+  }
+  .search-results{
+    order: -1;
+  }
+
+  .search-results-list {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .search-results-heading {
+    font-size: 1.25rem; /* Decrease font size for smaller screens */
+  }
+
+  .search-show-more {
+    width: auto; /* Allow the button to take the natural width */
+  }
 }

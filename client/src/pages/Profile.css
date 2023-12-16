@@ -9,7 +9,7 @@
 
 /* Profile Heading */
 .profile-heading {
-  font-size: 3rem;
+  font-size: 7rem;
   font-weight: bold;
   text-align: center;
   margin-top: 5rem;
@@ -63,6 +63,9 @@
 .profile-button {
   background-color: black;
   color: #ffffff;
+  /* font-weight: bold; */
+  /* word-spacing: 100px; */
+  letter-spacing: 2px;
   border-radius: 2rem;
   padding: 1rem;
   text-transform: uppercase;
@@ -82,6 +85,7 @@
 .profile-link {
   background-color: orangered;
   color: #ffffff;
+  letter-spacing: 2px;
   padding: 1rem;
   border-radius: 2rem;
   text-align: center;
@@ -179,7 +183,7 @@
 
 /* Delete Listing Button */
 .delete-listing {
-  background-color: orange;
+  background-color: orangered;
   color: black;
   padding: 0.4rem;
   border-radius: 0.8rem;

@@ -10,13 +10,15 @@
 }
 
 .about-heading {
-  font-size: 1.875rem;
+  font-size: 4.875rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: orangered; 
 }
 
 .about-paragraph {
+  text-align: justify;
+  text-justify: inter-word;
   margin-bottom: 1rem;
   color: black; 
 }

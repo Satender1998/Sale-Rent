@@ -94,22 +94,6 @@
   text-decoration: underline;
 }
 
-/* .custom-list {
-  display: flex;
-  flex-direction: col; 
-  gap: 3rem;
-  max-width: 80rem;
-} */
-
-
-/* .custom-list {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  overflow: hidden;
-  max-width: 100rem; 
-
-} */
 
 .custom-list {
   display: grid;
@@ -136,8 +120,6 @@
   .custom-heading {
     font-size: 5.5rem;
   }
-
-  
 
   .custom-swiper-slide {
     height: 500px;
