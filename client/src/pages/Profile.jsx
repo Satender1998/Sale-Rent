@@ -165,7 +165,8 @@ export default function Profile() {
   };
 
   return (
-    <div className="profile-container">
+    <div className="main-container">
+      <div className="profile-container">
       <h1 className="profile-heading">Profile</h1>
       <form onSubmit={handleSubmit} className="profile-form">
         <input
@@ -278,5 +279,7 @@ export default function Profile() {
         </div>
       )}
     </div>
+    </div>
+    
   );
 }

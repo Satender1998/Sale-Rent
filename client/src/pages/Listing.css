@@ -1,6 +1,8 @@
 
 
 .main-container {
+  background-color: var(--body_background);
+  /* color: var(--body_color); */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -69,6 +71,7 @@
 
 .title {
   font-size: 2rem;
+  color: var(--body_color);
   /* color: red; */
   margin-bottom: 5px;
   /* padding: 1px; */
@@ -81,7 +84,8 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  color: black;
+  /* color: black; */
+  color: var(--body_color);
   font-size: 1.2rem;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -121,7 +125,8 @@
 
 
 .description {
-  color: black;
+  /* color: black; */
+  color: var(--body_color);
   font-size: 17px;
   margin-top: 1px;
   margin-bottom: 1px;

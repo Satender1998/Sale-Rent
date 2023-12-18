@@ -1,10 +1,11 @@
 
 .about-container {
+  background-color: var(--body_background);
   padding-top: 5rem;
   padding-bottom: 5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 72rem;
+  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -12,7 +13,7 @@
 .about-heading {
   font-size: 4.875rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   color: orangered; 
 }
 
@@ -20,5 +21,5 @@
   text-align: justify;
   text-justify: inter-word;
   margin-bottom: 1rem;
-  color: black; 
+  color: var(--body_color); 
 }

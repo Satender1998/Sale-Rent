@@ -14,7 +14,8 @@ export default function App() {
 
   
   return (
-    <BrowserRouter>
+    <div className="APP">
+      <BrowserRouter>
     <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -30,5 +31,7 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </div>
+    
   );
 }

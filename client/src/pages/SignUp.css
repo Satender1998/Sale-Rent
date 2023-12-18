@@ -2,6 +2,7 @@
 
 /* SignUp Container */
 .signup-container {
+  background-color: var(--body_background); 
   padding: 1.125rem;
   max-width: 32rem;
   margin: auto;
@@ -9,6 +10,7 @@
 
 /* SignUp Title */
 .signup-title {
+  color: var(--button-color-text);
   font-size: 3.875rem;
   font-weight: bold;
   text-align: center;
@@ -48,6 +50,7 @@
 
 /* SignUp Link */
 .signup-link {
+  color: var(--button-color-text);
   display: flex;
   gap: 5px;
   margin-top: 1rem;
@@ -56,7 +59,7 @@
 
 /* SignUp Link Text */
 .signup-link span {
-  color: #3182ce;
+  color: var(--link_color);
   cursor: pointer;
 }
 

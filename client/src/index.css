@@ -1,4 +1,25 @@
+:root {
+    --body_background: white;
+    --body_color: #0F0F0F;
+    --link_color: navy;
+    --button_color1: 0F0F0F;
+    --button-color-text: 0F0F0F;
+}
 
+[data-theme= "dark"] {
+    --body_background: #0F0F0F;
+    --body_color: white;
+    --link_color: cyan;
+    --button_color1: white;
+    --button-color-text: white;
+}
+
+*{
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* 
 body{
     background-color: rgb(244, 244,244);
-}
+} */

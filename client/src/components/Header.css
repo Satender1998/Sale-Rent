@@ -20,7 +20,7 @@
 
 .header-title {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.85rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -45,8 +45,8 @@
   align-items: center;
   width: 100%;
 
-  max-width: 400px;
-  margin: 0 auto;
+   max-width: 400px;
+  margin: 0 auto; 
 
   @media (max-width: 600px){
     max-width: 100%;

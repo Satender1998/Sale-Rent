@@ -1,6 +1,7 @@
 
 
 .search-container {
+  background-color: var(--body_background);
   display: flex;
   flex-direction: row;
 }
@@ -14,6 +15,7 @@
 
 /* Search Form */
 .search-form {
+  color: var(--body_color);
   display: flex-col;
   flex-direction: column;
   gap: 2rem;
@@ -89,6 +91,7 @@
 
 /* Search Results */
 .search-results {
+  /* color: var(--body_color); */
   flex: 1;
   /* display: flex; */
 }
@@ -99,7 +102,7 @@
   font-weight: 600;
   border-bottom: 2px solid #33404e;
   padding: 1rem;
-  color: black;
+  color: var(--body_color);
   margin-top: 1.25rem;
 }
 

@@ -1,18 +1,43 @@
+body {
+  background-color: var(--body_background);
+  margin: 0; 
+  padding: 0; 
+}
 
+.main-container {
+  max-width: 100%;
+}
 
 /* Profile Container */
 .profile-container {
   padding: 1rem;
-  max-width: 32rem;
-  margin: 0 auto;
+  background-color: var(--body_background);
 }
+
+/* .main-container{
+  max-width: 100%;
+} */
+
+/* Profile Container */
+/* .profile-container {
+  padding: 1rem;
+  max-width: 100%; 
+  margin: 0 auto; 
+  align-items: center;
+  background-color: var(--body_background);
+  
+} */
 
 /* Profile Heading */
 .profile-heading {
   font-size: 7rem;
+  color: var(--body_color);
+  /* max-width: 32rem; */
   font-weight: bold;
   text-align: center;
-  margin-top: 5rem;
+  /* margin-top: 5rem;
+  margin-left: 28rem; */
+
 }
 
 /* Profile Form */
@@ -20,6 +45,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  /* max-width: 32rem;
+  margin-left: 28rem; */
 }
 
 /* Profile Image */
@@ -61,8 +88,8 @@
 
 /* Profile Button */
 .profile-button {
-  background-color: black;
-  color: #ffffff;
+  background-color: #008000;
+  color: var(--button-color-text);
   /* font-weight: bold; */
   /* word-spacing: 100px; */
   letter-spacing: 2px;
@@ -84,7 +111,7 @@
 /* Profile Link */
 .profile-link {
   background-color: orangered;
-  color: #ffffff;
+  color: var(--button-color-text);
   letter-spacing: 2px;
   padding: 1rem;
   border-radius: 2rem;
@@ -122,7 +149,7 @@
 /* Show Listings Button */
 .show-listings {
   background-color: #008000;
-  color: black;
+  color:var(--button-color-text);
   padding: 0.7rem;
   border-radius: 2rem;
   text-align: center;
@@ -143,6 +170,7 @@
 /* User Listings Heading */
 .user-listings-heading {
   font-size: 2rem;
+  color: var(--body_color);
   font-weight: bold;
   text-align: center;
   margin-top: 1rem;
@@ -168,7 +196,7 @@
 
 /* User Listing Details */
 .user-listing-details {
-  color: #1a202c;
+  color: var(--body_color);
   font-weight: bold;
   text-decoration: none;
   flex: 1;
@@ -184,7 +212,7 @@
 /* Delete Listing Button */
 .delete-listing {
   background-color: orangered;
-  color: black;
+  color: var(--body_color);
   padding: 0.4rem;
   border-radius: 0.8rem;
   cursor: pointer;
@@ -193,7 +221,7 @@
 /* Edit Listing Button */
 .edit-listing {
   background-color: green;
-  color: black;
+  color: var(--body_color);
   padding: 0.4rem;
   border-radius: 0.8rem;
   margin-top: 10px;

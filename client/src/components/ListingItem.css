@@ -1,13 +1,12 @@
 
 .listing-item {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--body_background);
+  /* color: var(--body_color); */
+  box-shadow:  4px 8px rgb(255, 255, 255);
   transition: box-shadow 0.3s ease;
   overflow: hidden;
   border-radius: 0.5rem;
   width: 100%;
-  /* max-width: 330px;  */
-  /* margin-bottom: 1.25rem;  */
 }
 
 .listing-item:hover {
@@ -37,16 +36,18 @@
 }
 
 .listing-name {
+  color: var(--body_color);
   font-size: 1.5rem;
   font-weight: bold;
-  color: #4a5568;
+  /* color: #4a5568; */
 }
 
 .location-container {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  color: #2d3748;
+  /* color: var(--body_color); */
+  /* color: #2d3748; */
 }
 
 .location-icon {
@@ -61,12 +62,14 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #4a5568;
+  color: var(--body_color);
+  /* color: #4a5568; */
 }
 
 .description {
   font-size: 0.875rem;
-  color: #4a5568;
+  /* color: #4a5568; */
+  color: var(--body_color);
   line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -78,16 +81,19 @@
 .price {
   font-size: 1rem;
   font-weight: bold;
-  color: #2d3748;
+  color: var(--body_color);
+  /* color: #2d3748; */
 }
 
 .features {
   display: flex;
   gap: 1rem;
+  /* color: var(--body_color); */
 }
 
 .feature {
   font-weight: bold;
   font-size: 0.875rem;
-  color: #2d3748;
+  color: var(--body_color);
+  /* color: #2d3748; */
 }

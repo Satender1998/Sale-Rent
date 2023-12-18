@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 
 import "./Header.css";
+import DarkMode from "./DarkMode";
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
@@ -67,6 +68,9 @@ export default function Header() {
             <Link to="/about" className="header-nav-link">
               About
             </Link>
+          </li>
+          <li className="header-nav-item-darkMode">
+            <DarkMode />
           </li>
           <li className="header-nav-item">
             <Link to="/profile" className="header-nav-link">
