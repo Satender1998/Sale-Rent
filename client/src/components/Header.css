@@ -183,7 +183,14 @@
   }
 
   .header-nav-item {
-    margin: 10px 0;
+    /* margin: 10px 0; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+  }
+  .header-nav-item-darkMode{
+    margin-left: 10px;
   }
 }
 
