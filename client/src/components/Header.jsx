@@ -1,4 +1,4 @@
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaBars } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
@@ -10,6 +10,11 @@ export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,6 +42,12 @@ export default function Header() {
   return (
     <header className="header-container">
       <div className="header-content">
+
+      <div className="header-menu-icon" onClick={handleMenuToggle}>
+          <FaBars />
+        </div>
+
+
         <Link to="/" className="header-logo">
           <h1 className="header-title">
             <span className="header-title-part1">Sale&</span>
@@ -58,7 +69,14 @@ export default function Header() {
           </button>
         </form>
         {/* Navigation links for Home, About, and User Profile */}
-        <ul className="header-navigation">
+
+
+
+        <ul className={`header-navigation ${menuOpen ? "open" : ""}`}>
+
+
+
+        {/* <ul className="header-navigation"> */}
           <li className="header-nav-item">
             <Link to="/" className="header-nav-link">
               Home
@@ -82,7 +100,7 @@ export default function Header() {
                   alt="profile"
                 />
               ) : (
-                <span className="header-signin">Sign in</span>
+                <span className="header-signin">SignIn</span>
               )}
             </Link>
           </li>

@@ -14,6 +14,19 @@
   align-items: center;
 }
 
+/* hamburger menu icon  */
+
+.header-menu-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  margin-top: 13px;
+  color: black;
+  display: block; /* Show the icon for smaller screens */
+}
+
+/* hamburger menu icon */
+
 .header-logo {
   text-decoration: none;
 }
@@ -44,8 +57,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-
-   max-width: 400px;
+  max-width: 400px;
   margin: 0 auto; 
 
   @media (max-width: 600px){
@@ -73,13 +85,41 @@
 }
 
 .header-navigation {
+
   /* font-size: 20px; */
   display: flex;
   gap: 1rem;
   list-style: none;
+
+
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+
+
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+.header-navigation li {
+  margin-right: 20px;
+}
+
+.header-navigation.open {
+  /* Styles applied when the menu is open */
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust as needed based on your header height */
+  right: 0;
+  left: 0; /* Adjust to make the menu cover the entire width */
+  background-color: #efce81; /* Adjust the background color as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Ensure the menu is on top of other elements */
 }
 
 .header-nav-item {
+  margin-left: 10px;
   font-size: 25px;
   display: inline-block;
 }
@@ -111,3 +151,39 @@
 .header-signin:hover {
   color: #2d3748; 
 }
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+  .header-menu-icon {
+    display: none; /* Hide the hamburger icon for screens above 768px */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .header-navigation {
+    display: none; /* Hide the navigation links by default for smaller screens */
+    width: 100%; /* Make the navigation full-width */
+  }
+
+  .header-navigation.open {
+    display: flex; /* Show the navigation links when the menu is open */
+  }
+
+  .header-nav-item {
+    margin: 10px 0;
+  }
+}
+
